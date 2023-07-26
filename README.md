@@ -46,4 +46,4 @@ The Hello World app is accessible at: <localhost:8701>.
 
 For each time you open the app, you should get a trace similar to this one:
 
-![image](https://github.com/open-telemetry/opentelemetry-demo/assets/15364991/30022306-278d-473c-8019-b58261df55df)
+![image](https://github.com/julianocosta89/gunicorn-with-OTel/assets/15364991/c080f50d-ae2a-482a-941f-dc2469fc6315)
