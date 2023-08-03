@@ -16,7 +16,6 @@ as explained below in the `Run the container` section.
 To further instructions, please check out the
 [official Dynatrace documentation](https://www.dynatrace.com/support/help/extend-dynatrace/opentelemetry/walkthroughs/python).
 
-
 ## Build the image
 
 ```shell
@@ -31,8 +30,7 @@ and run the command:
 ```shell
 docker run --rm -d -p 8701:8701 --name uvicorn \
   -e OTEL_SERVICE_NAME=uvicorn-sample \
-  -e OTEL_EXPORTER_OTLP_METRICS_ENDPOINT=https://<TENANT_URL>/api/v2/otlp/v1/metrics \
-  -e OTEL_EXPORTER_OTLP_METRICS_HEADERS=Authorization=Api-Token%20<TOKEN> \
+  -e OTEL_METRICS_EXPORTER=none \
   -e OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=https://<TENANT_URL>/api/v2/otlp/v1/traces \
   -e OTEL_EXPORTER_OTLP_TRACES_HEADERS=Authorization=Api-Token%20<TOKEN> \
   uvicorn
