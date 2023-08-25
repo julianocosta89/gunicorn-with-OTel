@@ -29,7 +29,6 @@ and run the command:
 
 ```shell
 docker run --rm -d -p 8701:8701 --name uvicorn \
-  -e OTEL_SERVICE_NAME=uvicorn-sample \
   -e OTEL_METRICS_EXPORTER=none \
   -e OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=https://<TENANT_URL>/api/v2/otlp/v1/traces \
   -e OTEL_EXPORTER_OTLP_TRACES_HEADERS=Authorization=Api-Token%20<TOKEN> \

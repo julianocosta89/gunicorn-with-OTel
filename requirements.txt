@@ -1,0 +1,7 @@
+fastapi
+gunicorn
+opentelemetry-api
+opentelemetry-exporter-otlp
+opentelemetry-instrumentation
+opentelemetry-instrumentation-fastapi
+opentelemetry-sdk
